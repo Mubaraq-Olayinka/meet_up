@@ -5,9 +5,14 @@ import { AppThunk } from "../store";
 import auth from "@react-native-firebase/auth";
 import Snackbar from "react-native-snackbar";
 import firestore from '@react-native-firebase/firestore';
+import { ScreenStackHeaderConfigProps } from "react-native-screens";
 
 interface User {
   email: string;
+  // password: string;
+  // firstName: string; 
+  // lastName: string;
+  // location: string;
   // Add other user properties as needed
 }
 

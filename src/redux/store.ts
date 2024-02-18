@@ -5,6 +5,7 @@ import eventSlice from './slices/eventSlice';
 import addEventSlice from './slices/addEventSlice';
 import { persistStore, persistReducer } from 'redux-persist';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import getUserSlice from './slices/getUserSlice';
 
 
 const persistConfig = {
@@ -16,7 +17,8 @@ const persistConfig = {
 const rootReducer = combineReducers({
   user: userSlice,
   event: eventSlice,
-  addEvent: addEventSlice
+  addEvent: addEventSlice,
+  getUser: getUserSlice
   // Add other reducers here if you have any
 });
 
